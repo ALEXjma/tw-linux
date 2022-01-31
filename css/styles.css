@@ -1,0 +1,157 @@
+/* Definir a fonte */
+@font-face {
+  font-family: "Linux-Biolinum";
+  src: url("../fonts/LinBiolinum_R.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Linux-Biolinum";
+  src: url("../fonts/LinBiolinum_RB.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Linux-Biolinum";
+  src: url("../fonts/LinBiolinum_aBL.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Linux-Biolinum";
+  src: url("../fonts/LinBiolinum_aSB.ttf");
+  font-weight: bold;
+  font-style: caps;
+}
+
+/* Background e Cor do texto */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.8)),
+    url("../images/background.png");
+  background-attachment: fixed;
+  color: white;
+  margin: 80px 0 1rem;
+  font-family: Linux-Biolinum, Helvetica, Arial, sans-serif;
+}
+
+/*  Estilo dos links href */
+a:link {
+  color: currentColor;
+  text-decoration: underline;
+}
+a:visited {
+  color: rgb(255, 0, 255);
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* Estilo dos títulos */
+.title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+}
+.subtitle {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 25px;
+}
+.entrytitle {
+  font-weight: bold;
+  font-style: caps;
+  font-size: 30px;
+}
+
+/* Estilo dos textos */
+.center {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+  text-justify: auto;
+}
+
+/* Barra de Navegação */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0.1rem;
+  font-family: Linux-Biolinum, Helvetica, Arial, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a:link {
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: currentColor;
+  text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+  color: red;
+}
+nav a:active {
+  color: yellow;
+}
+
+/* Estilo das entradas */
+.divcontainer {
+  width: 80%;
+  margin: 3rem auto;
+  overflow: auto;
+}
+.divcolumn {
+  width: 33%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  height: auto;
+  float: left;
+  text-align: center;
+}
+.divrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  float: left;
+}
+.divimage {
+  object-fit: contain;
+  width: 60%;
+  margin: 0.5rem;
+  background-color: white;
+}
+.divimage:hover,
+.divimage:focus {
+  background-color: lightcyan;
+}
+.divimage:active {
+  background-color: lightskyblue;
+}
+.thumbnail {
+  width: 12rem;
+  margin: 1rem 1rem;
+  float: left;
+}
